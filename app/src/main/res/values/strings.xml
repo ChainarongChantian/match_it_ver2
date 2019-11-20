@@ -1,0 +1,89 @@
+<!--
+  ~ Copyright 2018, The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="app_name">Android Trivia</string>
+    <string name="game_over">Game Over</string>
+    <string name="try_again">Try Again?</string>
+    <string name="position">Position</string>
+    <string name="select_an_avatar">Select an Avatar</string>
+    <string name="android_trivia">Android Trivia</string>
+    <string name="about_text">Android Trivia will help remind you of important concepts you have learned and will learn in Android development.\n\nConsider modifying the questions and graphics to make this game your own!</string>
+    <string name="rules_text">Select the answer from the options given. Each time you get an answer correct, you advance to the next question.\n\nIf you get the answer wrong, your game ends! You can return to the title screen using up or back from within the game screen, and this will also end your game.</string>
+    <string name="rules">Game Rules</string>
+    <string name="about">About Game</string>
+    <string name="trivia_hint">Trivia Hint</string>
+    <string name="title_android_trivia_question">Android Trivia (%1$d/%2$d)</string>
+    <string name="title_about_trivia">About Trivia</string>
+    <string name="title_trivia_rules">Trivia Rules</string>
+    <string name="share_success_text">I mastered #UdacityAndroidTrivia with %1$d/%2$d correct questions!</string>
+    <string name="submit_button">Submit</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="share">Share</string>
+    <string name="sharing_not_available">Sharing Not Available</string>
+
+    <string name="logo">Logo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ranking_button">Ranking</string>
+    <string name="play_game_button">Play Game</string>
+    <string name="play_guest_button">Play As Guest</string>
+    <string name="login_to_play">Login to Play</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="or">or</string>
+    <string name="create_account">Create Account ?</string>
+    <string name="username_create_hint">Your Username</string>
+    <string name="password_create_hint">Your Password</string>
+    <string name="log_in_button">Log In</string>
+    <string name="create_button">Create Account</string>
+    <string name="box">Box Fruit</string>
+
+    <string name="rule1">1) tap the box to open with your random fruit</string>
+    <string name="rule2">2) match both of same fruits it will vanished the box</string>
+    <string name="rule3">3) vanish all box to won the game</string>
+    <string name="rule4">4) won game less time get more your points</string>
+    <string name="rule5">5) NO TIME OUT, but can GIVE UP to play again!!</string>
+    <string name="rule6">see on RANKING!!! Good Game?!</string>
+    <string name="your_score">Your Scores :</string>
+    <string name="scores">Scores</string>
+    <string name="play_again_button">Play Again</string>
+    <string name="quit_to_menu_button">Quit To Menu</string>
+
+    <string name="ranking">Ranking</string>
+    <string name="good_job">GOOD JOB</string>
+    <string name="back_to_menu_button">Back To Menu</string>
+    <string name="about_game_phase_1">This game created by Chainarong Chantian 59161075 G.1</string>
+    <string name="about_game_phase_2">See code on Github references</string>
+    <string name="about_game_phase_3">Based on Mobile Development II with Android + Kotlin 2019</string>
+
+
+    <string name="share_game_score">I am done #MATCH IT with %1$d scores!!</string>
+    <string name="your_times">Your Times:</string>
+    <string name="times">Times</string>
+    <string name="im_sure_my_scores_button">Im Sure My Scores</string>
+    <string name="username_col">Username</string>
+    <string name="time_col">Time</string>
+    <string name="score_col">Score</string>
+    <string name="game_play">Game Play</string>
+    <string name="game_done_label">Game Done</string>
+    <string name="score_saved">Score Saved, you can play it again</string>
+    <string name="game_beginning">Game already begin</string>
+    <string name="hello_user">Hello user, game is available</string>
+    <string name="you_are_there">You are there?</string>
+
+</resources>

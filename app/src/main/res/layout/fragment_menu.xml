@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.navigation.menu.MenuFragment">
+
+    <data>
+        <variable
+            name="menuViewModel"
+            type="com.example.android.navigation.menu.MenuViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menuConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary">
+
+        <EditText
+            android:id="@+id/usernamePlay"
+            android:layout_width="272dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="456dp"
+            android:layout_marginBottom="12dp"
+            android:ems="10"
+            android:hint="@string/username_create_hint"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/playGameButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.99" />
+
+        <ImageView
+            android:id="@+id/logoMenu"
+            android:layout_width="373dp"
+            android:layout_height="296dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/match_it"
+            app:layout_constraintBottom_toTopOf="@+id/playGameButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.158" />
+
+        <Button
+            android:id="@+id/playGameButton"
+            android:layout_width="202dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="12dp"
+            android:enabled="@{menuViewModel.playButtonVisible}"
+            android:text="@string/play_game_button"
+            app:layout_constraintBottom_toTopOf="@+id/rankingButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/rankingButton"
+            android:layout_width="202dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="35dp"
+            android:text="@string/ranking_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

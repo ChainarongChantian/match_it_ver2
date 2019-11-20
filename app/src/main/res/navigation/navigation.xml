@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/menuFragment">
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.android.navigation.game.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment_to_gameDoneFragment"
+            app:destination="@id/gameDoneFragment"
+            app:popUpTo="@+id/menuFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="username"
+            app:argType="string" />
+        <argument
+            android:name="gameScore"
+            app:argType="integer" />
+        <argument
+            android:name="timeSpent"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameDoneFragment"
+        android:name="com.example.android.navigation.game_done.GameDoneFragment"
+        android:label="fragment_game_done"
+        tools:layout="@layout/fragment_game_done" >
+        <action
+            android:id="@+id/action_gameDoneFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_gameDoneFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <argument
+            android:name="gameScore"
+            app:argType="integer" />
+        <argument
+            android:name="timeSpent"
+            app:argType="integer" />
+        <argument
+            android:name="username"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/rulesFragment2"
+        android:name="com.example.android.navigation.side_nav.RulesFragment"
+        android:label="fragment_rules"
+        tools:layout="@layout/fragment_rules" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.android.navigation.menu.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_rankingFragment"
+            app:destination="@id/rankingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment2"
+        android:name="com.example.android.navigation.side_nav.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/rankingFragment"
+        android:name="com.example.android.navigation.ranking.RankingFragment"
+        android:label="fragment_ranking"
+        tools:layout="@layout/fragment_ranking" >
+        <action
+            android:id="@+id/action_rankingFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+</navigation>
